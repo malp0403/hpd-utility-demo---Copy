@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+
+
+.mat-vertical-stepper-content 
+{
+    visibility: visible !important;
+    height: 100% !important;
+    // background-color: lightcyan;
+    border-radius: 10px;
+    padding:30px;
+}
+// .mat-step-header{
+//      padding: 3px;
+// }

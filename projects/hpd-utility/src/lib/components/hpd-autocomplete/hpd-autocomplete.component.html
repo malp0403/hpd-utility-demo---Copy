@@ -1,0 +1,13 @@
+<form class="form-group">
+    <input class="form-control"
+     type="text" [formControl]="control"  
+     [matAutocomplete]="auto"                        
+     placeholder="{{placeholder}}" 
+     id="hpdAutoComplete">
+    <mat-autocomplete #auto="matAutocomplete">
+      <mat-option *ngFor="let option of options" [value]="option.id">
+        {{option.name}}
+      </mat-option>
+    </mat-autocomplete>
+
+</form>

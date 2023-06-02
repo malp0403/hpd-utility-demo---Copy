@@ -1,0 +1,9 @@
+<div class="form-group">
+  <div class="row">
+    <input type="text" id="name" class="form-control" [ngClass]="{'is-invalid': control.errors && control.touched }"
+      [formControl]="control" placeholder="{{placeholder}}">
+    <div *ngIf="control.errors && control.touched" class="invalid-feedback">
+      {{getErrorMessage()}}
+    </div>
+  </div>
+</div>

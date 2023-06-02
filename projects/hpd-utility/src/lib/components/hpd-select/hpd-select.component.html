@@ -1,0 +1,14 @@
+<div class="form-group">
+    <select class="form-select" [ngClass]= "{'is-invalid': control.errors && control.touched }"
+    name="selectBorough"
+    aria-label="Select borough" id="selectBorough" required=""
+    [formControl]="control">
+        <option *ngFor="let option of options" [value]="option.id">
+            {{option.name}}
+        </option>
+    </select>
+    <div *ngIf="control.errors && control.touched" class="invalid-feedback">
+         {{getErrorMessage()}}
+    </div>
+
+</div>
